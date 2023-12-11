@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+::-webkit-scrollbar-track {
+  /* Change the background color */
+  background-color: #e20e0e;
+}
+
+/* Select the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  /* Change the background color */
+  background-color: #00065c;
+
+  /* Change the size of the thumb */
+  height: 30px;
+  width: 30px;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+.leaflet-container {
+  width: 550px;
+  height: 450px;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+  @apply w-72 cursor-pointer border-b-4 rounded-md bg-gradient-to-t from-white/25 h-44 text-center self-end;
+}
+
+.submit-btn {
+  @apply cursor-pointer rounded-md bg-blue-500 hover:bg-blue-600 text-white font-bold px-3 py-2 capitalize;
+}
+
+.modal-wrapper {
+  @apply fixed w-full h-screen backdrop-blur z-50 flex justify-center items-center inset-0 bg-black/50 overflow-y-auto;
+}
+
+.modal-box {
+  @apply m-auto  shadow-lg  rounded-md bg-white mx-3 ;
+}
+
+.form-header {
+  @apply bg-orange-500 p-3 text-white font-extrabold text-2xl flex justify-between rounded-t;
+}
+.form-error {
+  @apply border border-red-500;
+}
+
+.form-input {
+  @apply rounded-md p-2 outline-none border;
+}
+
+.disable-btn {
+  @apply px-2 py-2 rounded-sm text-white font-bold bg-blue-200;
+}
+.form-wrapper {
+  @apply mt-2 mb-2 w-80 max-w-screen-lg sm:w-96 p-3;
+}
+
+.close-icon {
+  @apply flex justify-center items-center bg-black/50 rounded-full p-1 cursor-pointer;
+}
+
+.form-label {
+  @apply text-black font-bold;
+}
